@@ -103,7 +103,7 @@ class _OtvetBibaState extends State<OtvetBiba> with TickerProviderStateMixin {
                       ],
                     ),
                     ColorizeAnimatedText(
-                      'Тест завершен на ${widget.correctBibaPercent}%',
+                      'Тест завершен  на ${widget.correctBibaPercent}%',
                       textStyle: TextStyle(fontSize: 30.0, fontFamily: "BIBA"),
                       colors: [
                         Colors.purple,
