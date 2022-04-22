@@ -6,11 +6,11 @@ class Quest {
   List<bool> _BibaAnswers = [];
 
   final List<text> _textQuest = [
-    text('Эй,Дора.', true),
-    text('Готова?', true),
-    text('Да', false),
-    text('В моих глазах доллар? ', false),
-    text('БАКС', true),
+    text('Вопрос 1. Вы любите обществознание?', 'Да', 'Нет', true),
+    text('Вопрос 2. Что такое конкуренция?', 'Да', 'Нет', true),
+    text('Вопрос 3. Что такое чистая монополия?', 'Да', 'Нет', false),
+    text('? ', 'Да', 'Нет', false),
+    text('БАКС', 'Да', 'Нет', true),
   ];
 
   addAnswer(bool answer) {
@@ -23,6 +23,14 @@ class Quest {
 
   gettext() {
     return _textQuest[_textNumber].textQuest;
+  }
+
+  getAnswer1() {
+    return _textQuest[_textNumber].answer1;
+  }
+
+  getAnswer2() {
+    return _textQuest[_textNumber].answer2;
   }
 
   gettextAnswer() {

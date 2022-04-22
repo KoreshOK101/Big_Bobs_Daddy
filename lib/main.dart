@@ -3,8 +3,10 @@ import 'package:autism/quest.dart';
 import 'package:autism/text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:vk_bridge/vk_bridge.dart';
 
-void main() {
+Future<void> main() async {
+  VKBridge.instance.init();
   runApp(const AutismTEST());
 }
 
@@ -68,7 +70,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
                 ),
                 child: Center(
                   child: Text(
-                    '! Да !',
+                    quest.getAnswer1(),
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 30),
                   ),
@@ -91,7 +93,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
                 ),
                 child: Center(
                   child: Text(
-                    '! Нет !',
+                    quest.getAnswer2(),
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 30),
                   ),
