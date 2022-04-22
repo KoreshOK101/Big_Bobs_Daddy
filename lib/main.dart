@@ -48,11 +48,11 @@ class _TestingPAGEState extends State<TestingPAGE> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Center(
-                child: Text(
+                child: Flexible(child: Text(
               quest.gettext(),
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 60),
-            )),
+            ))),
           ),
           flex: 3,
         ),
@@ -69,11 +69,11 @@ class _TestingPAGEState extends State<TestingPAGE> {
                   color: Colors.lightGreenAccent,
                 ),
                 child: Center(
-                  child: Text(
+                  child: Flexible(child: Text(
                     quest.getAnswer1(),
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 30),
-                  ),
+                  ),)
                 ),
               ),
             ),
@@ -92,11 +92,11 @@ class _TestingPAGEState extends State<TestingPAGE> {
                   color: Colors.lightGreenAccent,
                 ),
                 child: Center(
-                  child: Text(
-                    quest.getAnswer2(),
+                  child: Flexible(child: Text(
+                    quest.getAnswer1(),
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 30),
-                  ),
+                  ),)
                 ),
               ),
             ),
@@ -115,11 +115,11 @@ class _TestingPAGEState extends State<TestingPAGE> {
                   color: Colors.lightGreenAccent,
                 ),
                 child: Center(
-                  child: Text(
-                    quest.getAnswer3(),
+                  child: Flexible(child: Text(
+                    quest.getAnswer1(),
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 29),
-                  ),
+                    style: TextStyle(fontSize: 30),
+                  ),)
                 ),
               ),
             ),

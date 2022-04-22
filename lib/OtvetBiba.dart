@@ -56,10 +56,10 @@ class _OtvetBibaState extends State<OtvetBiba> with TickerProviderStateMixin {
             begin: BorderRadius.circular(1000), end: BorderRadius.circular(100))
         .animate(_containerController);
     _containerCollorAnimation =
-        ColorTween(begin: Colors.black, end: Colors.white)
+        ColorTween(begin: Color(0xFFBEFFFF), end: Colors.white)
             .animate(_containerController);
     _backgroundCollorAnimation =
-        ColorTween(begin: Colors.white, end: Colors.black)
+        ColorTween(begin: Colors.white, end: Colors.lightGreenAccent)
             .animate(_containerController);
     _containerRotationAnimation =
         Tween(begin: 0.0, end: 2.0).animate(_containerController);
