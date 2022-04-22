@@ -93,7 +93,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
                 ),
                 child: Center(
                   child: Text(
-                    quest.getAnswer1(),
+                    quest.getAnswer2(),
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 25),
                   ),
@@ -116,7 +116,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
                 ),
                 child: Center(
                   child: Text(
-                    quest.getAnswer1(),
+                    quest.getAnswer3(),
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 25),
                   ),
