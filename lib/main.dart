@@ -127,7 +127,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
         ),
         Hero(
           tag: 'scoreBIG_BOB',
-          child: scoreRow(quest.getAnswerList(), 30, false),
+          child: scoreRow(quest.getAnswerList(), 15, false),
         )
       ],
     );
