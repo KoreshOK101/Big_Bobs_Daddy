@@ -58,7 +58,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
         ),
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.all(40.0),
+            padding: const EdgeInsets.all(33.0),
             child: GestureDetector(
               onTap: () {
                 checkAnswer(1);
@@ -81,7 +81,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
         ),
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.all(40.0),
+            padding: const EdgeInsets.all(33.0),
             child: GestureDetector(
               onTap: () {
                 checkAnswer(2);
@@ -104,7 +104,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
         ),
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.all(40.0),
+            padding: const EdgeInsets.all(33.0),
             child: GestureDetector(
               onTap: () {
                 checkAnswer(3);
