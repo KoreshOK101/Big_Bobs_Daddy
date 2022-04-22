@@ -48,11 +48,11 @@ class _TestingPAGEState extends State<TestingPAGE> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Center(
-                child: Flexible(child: Text(
+                child: Text(
               quest.gettext(),
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 60),
-            ))),
+            )),
           ),
           flex: 3,
         ),
@@ -63,19 +63,19 @@ class _TestingPAGEState extends State<TestingPAGE> {
               onTap: () {
                 checkAnswer(1);
               },
-              child: Container(
+              child: Flexible(child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
                   color: Colors.lightGreenAccent,
                 ),
                 child: Center(
-                  child: Flexible(child: Text(
+                  child: Text(
                     quest.getAnswer1(),
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 30),
-                  ),)
+                  ),
                 ),
-              ),
+              ),)
             ),
           ),
         ),
@@ -86,19 +86,19 @@ class _TestingPAGEState extends State<TestingPAGE> {
               onTap: () {
                 checkAnswer(2);
               },
-              child: Container(
+              child: Flexible(child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
                   color: Colors.lightGreenAccent,
                 ),
                 child: Center(
-                  child: Flexible(child: Text(
+                  child: Text(
                     quest.getAnswer1(),
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 30),
-                  ),)
+                  ),
                 ),
-              ),
+              ),)
             ),
           ),
         ),
@@ -109,7 +109,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
               onTap: () {
                 checkAnswer(3);
               },
-              child: Container(
+              child: Flexible(child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
                   color: Colors.lightGreenAccent,
@@ -121,7 +121,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
                     style: TextStyle(fontSize: 30),
                   ),)
                 ),
-              ),
+              ),)
             ),
           ),
         ),
