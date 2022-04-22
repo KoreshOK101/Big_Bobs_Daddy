@@ -11,6 +11,7 @@ class Quest {
     text('Вопрос 3. Что такое чистая монополия?', 'Да', 'Нет', false),
     text('? ', 'Да', 'Нет', false),
     text('БАКС', 'Да', 'Нет', true),
+    text('ты бот', 'Да', 'Нет', true),
   ];
 
   addAnswer(bool answer) {
