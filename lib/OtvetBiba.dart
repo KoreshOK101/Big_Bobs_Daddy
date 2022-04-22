@@ -90,30 +90,9 @@ class _OtvetBibaState extends State<OtvetBiba> with TickerProviderStateMixin {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 scoreRow(widget.quest.getAnswerList(), 50, true),
-                AnimatedTextKit(
-                  animatedTexts: [
-                    ColorizeAnimatedText(
-                      '',
-                      textStyle: TextStyle(fontSize: 30.0, fontFamily: "BIBA"),
-                      colors: [
-                        Colors.purple,
-                        Colors.blue,
-                        Colors.yellow,
-                        Colors.red
-                      ],
-                    ),
-                    ColorizeAnimatedText(
-                      'Тест завершен  на ${widget.correctBibaPercent}%',
-                      textStyle: TextStyle(fontSize: 30.0, fontFamily: "BIBA"),
-                      colors: [
-                        Colors.purple,
-                        Colors.blue,
-                        Colors.yellow,
-                        Colors.red
-                      ],
-                    )
-                  ],
-                  isRepeatingAnimation: false,
+                Text(
+                  'Тест завершен  на ${widget.correctBibaPercent}%',
+                  style: TextStyle(fontSize: 30.0, fontFamily: "BIBA"),
                 ),
                 TextButton(
                     onPressed: () {
