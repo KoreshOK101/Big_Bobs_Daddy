@@ -51,7 +51,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
                 child: Text(
               quest.gettext(),
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 55),
+              style: TextStyle(fontSize: 60),
             )),
           ),
           flex: 3,
@@ -72,7 +72,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
                   child: Text(
                     quest.getAnswer1(),
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 28),
+                    style: TextStyle(fontSize: 30),
                   ),
                 ),
               ),
@@ -95,7 +95,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
                   child: Text(
                     quest.getAnswer2(),
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 28),
+                    style: TextStyle(fontSize: 30),
                   ),
                 ),
               ),
@@ -118,7 +118,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
                   child: Text(
                     quest.getAnswer3(),
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 29),
                   ),
                 ),
               ),
