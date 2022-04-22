@@ -61,7 +61,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
             padding: const EdgeInsets.all(40.0),
             child: GestureDetector(
               onTap: () {
-                checkAnswer(true);
+                checkAnswer(1);
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -84,7 +84,7 @@ class _TestingPAGEState extends State<TestingPAGE> {
             padding: const EdgeInsets.all(40.0),
             child: GestureDetector(
               onTap: () {
-                checkAnswer(false);
+                checkAnswer(2);
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -102,6 +102,29 @@ class _TestingPAGEState extends State<TestingPAGE> {
             ),
           ),
         ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(40.0),
+            child: GestureDetector(
+              onTap: () {
+                checkAnswer(3);
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  color: Colors.lightGreenAccent,
+                ),
+                child: Center(
+                  child: Text(
+                    quest.getAnswer3(),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 30),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
         Hero(
           tag: 'scoreBIG_BOB',
           child: scoreRow(quest.getAnswerList(), 30, false),
@@ -110,8 +133,8 @@ class _TestingPAGEState extends State<TestingPAGE> {
     );
   }
 
-  checkAnswer(bool userAnswer) {
-    bool correctAnswer = quest.gettextAnswer();
+  checkAnswer(int userAnswer) {
+    int correctAnswer = quest.gettextAnswer();
     setState(() {
       if (userAnswer == correctAnswer) {
         correctBiba++;
