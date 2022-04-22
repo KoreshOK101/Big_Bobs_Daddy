@@ -21,7 +21,7 @@ class AutismTEST extends StatelessWidget {
         body: SafeArea(
           child: TestingPAGE(),
         ),
-        backgroundColor: Color(0xCDBEFFFF),
+        backgroundColor: Color(0xFFBEFFFF),
       ),
     );
   }
